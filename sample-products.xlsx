@@ -1,0 +1,54 @@
+# Sample Products Excel File Structure
+
+This is a reference for the Excel file structure. Create an Excel file with the following columns:
+
+## Column Headers (Row 1):
+- Name
+- Description  
+- Category
+- Image URL
+- Price
+- Stock
+- SKU
+
+## Sample Data (Rows 2+):
+
+| Name | Description | Category | Image URL | Price | Stock | SKU |
+|------|-------------|----------|-----------|-------|-------|-----|
+| Energy Drink | Refreshing energy drink for a quick boost | beverages | assets/images/products/energyDrink.jpg | 2.99 | 50 | BEV001 |
+| Redbull | The world-famous energy drink | beverages | assets/images/products/redbull.jpg | 3.49 | 30 | BEV002 |
+| Monster | Monster energy drink for extreme energy | beverages | https://images.monsterenergy.com/media/uploads/2021/07/monster-energy-can.png | 2.99 | 25 | BEV003 |
+| Coca-Cola | Classic Coca-Cola soft drink | beverages | https://www.coca-cola.com/content/dam/journey/us/en/private/2019/07/coca-cola-original-12oz-can.png | 1.99 | 100 | BEV004 |
+| Mars | Classic Mars chocolate bar | snacks | assets/images/products/mars.jpeg | 1.49 | 75 | SNK001 |
+| Twix | Crunchy and caramel Twix bar | snacks | assets/images/products/twix.webp | 1.29 | 60 | SNK002 |
+| Nutella | Hazelnut chocolate spread | snacks | assets/images/products/neutella.webp | 6.99 | 25 | SNK005 |
+| Quaker Oats | Healthy and nutritious oats | breakfast | assets/images/products/ots.jpg | 4.99 | 30 | BRK001 |
+| Coffee mate | Creamy coffee creamer | breakfast | assets/images/products/coffeemate.webp | 3.99 | 35 | BRK002 |
+
+## Category Selection Options:
+
+### Option 1: Predefined Categories
+When importing, you can select one of these predefined categories:
+- **Beverages**: Energy drinks, coffee, and soft drinks
+- **Snacks & Sweets**: Chocolates, spreads, and treats  
+- **Breakfast & Pantry**: Oats, coffee mate, and more
+
+### Option 2: Custom Categories
+Choose "Custom Category" to use the category column from your Excel file.
+
+## Image URL Formats Supported:
+
+1. **Local Assets**: `assets/images/products/image.jpg`
+2. **External URLs**: `https://example.com/image.jpg`
+3. **Base64 Data**: `data:image/jpeg;base64,/9j/4AAQ...`
+4. **Filename Only**: `image.jpg` (will be prefixed with assets path)
+
+## Notes:
+- The Image URL column can contain various formats
+- If an image fails to load, a default image will be used
+- **Category column is optional** when using predefined category selection
+- When using predefined categories, the category column in Excel will be ignored
+- Use "Custom Category" option for mixed product types
+- Prices should be numeric values
+- Stock should be integer values
+- SKU should be unique product codes 

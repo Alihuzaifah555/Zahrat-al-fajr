@@ -1,0 +1,88 @@
+<!-- Modern Contact Banner with Background Image -->
+<section class="contact-hero-new">
+  <div class="container text-center">
+    <h1 class="hero-title">Contact Us</h1>
+    <p class="hero-subtitle">We'd love to hear from you. Please don't hesitate to get in touch.</p>
+  </div>
+</section>
+
+<!-- Contact Details Section -->
+<section class="section">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="info-card">
+          <i class="bi bi-geo-alt"></i>
+          <h3>Our Address</h3>
+          <p>123 Business Street, Dubai, UAE</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-card">
+          <i class="bi bi-telephone"></i>
+          <h3>Phone</h3>
+          <p>+971 4 123 4567</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-card">
+          <i class="bi bi-envelope"></i>
+          <h3>Email</h3>
+          <p>info&#64;zahratalfajr.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="section bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="form-wrapper">
+                    <h2 class="form-title">Send Us a Message</h2>
+                    <form (ngSubmit)="onSubmit()">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" [(ngModel)]="formData.name" name="name" required placeholder=" ">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" [(ngModel)]="formData.email" name="email" required placeholder=" ">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" [(ngModel)]="formData.subject" name="subject" required placeholder=" ">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" [(ngModel)]="formData.message" name="message" required placeholder=" "></textarea>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178566661471!2d55.27056661500984!3d25.19719798389171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1647881234567!5m2!1sen!2s" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</section>

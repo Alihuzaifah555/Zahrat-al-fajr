@@ -1,0 +1,71 @@
+<!-- Products Hero Section -->
+<section class="products-hero">
+  <div class="container">
+    <div class="row align-items-center min-vh-50">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-4 fw-bold mb-4 animate-fadeInUp">Our Products</h1>
+        <p class="lead animate-fadeInUp" style="animation-delay: 0.2s">Discover our premium selection of food products</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title animate-fadeInUp">
+      <h2>Product Categories</h2>
+      <p>Browse our wide range of premium products</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-3" *ngFor="let category of categories; let i = index">
+        <a class="category-card animate-fadeInUp" [style.animation-delay]="i * 0.2 + 's'" [routerLink]="['/products/category', category.id]">
+          <div class="category-image-wrapper">
+            <img [src]="category.image" [alt]="category.name" class="category-image">
+            <div class="category-overlay">
+              <i [class]="category.icon"></i>
+              <p>{{ category.description }}</p>
+            </div>
+          </div>
+          <div class="category-content">
+            <h4>{{ category.name }}</h4>
+            <small class="text-muted">{{ getProductsByCategory(category.id).length }} products</small>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quality Assurance Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title animate-fadeInUp">
+      <h2>Quality Assurance</h2>
+      <p>We maintain the highest standards in all our products</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4 animate-fadeInUp" style="animation-delay: 0.2s">
+        <div class="text-center mb-4">
+          <i class="bi bi-check-circle display-4 text-primary"></i>
+          <h4 class="mt-3">Certified Products</h4>
+          <p>All our products meet international quality standards</p>
+        </div>
+      </div>
+      <div class="col-md-4 animate-fadeInUp" style="animation-delay: 0.4s">
+        <div class="text-center mb-4">
+          <i class="bi bi-shield-check display-4 text-primary"></i>
+          <h4 class="mt-3">Quality Control</h4>
+          <p>Rigorous quality control at every stage</p>
+        </div>
+      </div>
+      <div class="col-md-4 animate-fadeInUp" style="animation-delay: 0.6s">
+        <div class="text-center mb-4">
+          <i class="bi bi-truck display-4 text-primary"></i>
+          <h4 class="mt-3">Safe Delivery</h4>
+          <p>Proper handling and storage during transportation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

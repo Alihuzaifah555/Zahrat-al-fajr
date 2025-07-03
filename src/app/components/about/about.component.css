@@ -1,0 +1,37 @@
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/about-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  margin-top: -76px;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.bi {
+  color: var(--primary-color);
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}

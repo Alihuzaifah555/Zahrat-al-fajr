@@ -1,0 +1,111 @@
+<!-- About Section (formerly Welcome) -->
+<section class="hero-section position-relative overflow-hidden">
+  <div class="hero-bg"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-6 animate-fadeInUp">
+        <div class="about-card">
+          <h1 class="display-3 fw-bold mb-4 text-gradient">About Zahrat Al Fajr</h1>
+          <p class="lead mb-4 text-light about-main-text">
+            Zahrat Al Fajr Food Trading LLC is a leading provider of premium food products in the UAE. Since 2010, we have been committed to delivering quality, reliability, and customer satisfaction. Our mission is to source the finest products from around the world and bring them to your table with excellence and care.
+          </p>
+          <ul class="about-values mb-4">
+            <li><strong>Quality First:</strong> We never compromise on the quality of our products.</li>
+            <li><strong>Customer Focus:</strong> Your satisfaction is our top priority.</li>
+            <li><strong>Innovation:</strong> Constantly evolving to meet market demands.</li>
+            <li><strong>Sustainability:</strong> Committed to environmentally responsible practices.</li>
+          </ul>
+          <div class="d-flex gap-3">
+            <a routerLink="/products" class="btn btn-primary btn-lg">Explore Products</a>
+            <a routerLink="/contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <!-- Rolling Image Container -->
+      <div class="col-lg-6 d-none d-lg-block position-relative">
+        <img *ngIf="rollingImageUrl" [src]="rollingImageUrl" alt="Rolling Slider" class="rolling-slider-img" [class.rolling-in]="rollingIn" [class.rolling-out]="!rollingIn" [ngStyle]="rollingImageStyle">
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+      <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,200L1392,200C1344,200,1248,200,1152,200C1056,200,960,200,864,200C768,200,672,200,576,200C480,200,384,200,288,200C192,200,96,200,48,200L0,200Z"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-title animate-fadeInUp">
+      <h2>Featured Products</h2>
+      <p>Discover our premium selection of food products</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let product of featuredProducts; let i = index">
+        <div class="card h-100 shadow-hover animate-fadeInUp" [style.animation-delay]="i * 0.2 + 's'">
+          <div class="img-hover">
+            <img [src]="product.image" class="card-img-top" [alt]="product.title">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ product.title }}</h5>
+            <p class="card-text text-muted">{{ product.description }}</p>
+            <a routerLink="/products" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title animate-fadeInUp">
+      <h2>Why Choose Us</h2>
+      <p>We are committed to excellence in every aspect of our business</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 animate-fadeInUp" style="animation-delay: 0.2s">
+        <div class="feature-card text-center p-4">
+          <div class="feature-icon mb-4">
+            <i class="bi bi-award"></i>
+          </div>
+          <h4>Quality Assured</h4>
+          <p class="text-muted">We maintain the highest standards of quality in all our products, ensuring your complete satisfaction.</p>
+        </div>
+      </div>
+      <div class="col-md-4 animate-fadeInUp" style="animation-delay: 0.4s">
+        <div class="feature-card text-center p-4">
+          <div class="feature-icon mb-4">
+            <i class="bi bi-globe"></i>
+          </div>
+          <h4>Global Sourcing</h4>
+          <p class="text-muted">We source the finest products from around the world, bringing you the best international flavors.</p>
+        </div>
+      </div>
+      <div class="col-md-4 animate-fadeInUp" style="animation-delay: 0.6s">
+        <div class="feature-card text-center p-4">
+          <div class="feature-icon mb-4">
+            <i class="bi bi-truck"></i>
+          </div>
+          <h4>Reliable Delivery</h4>
+          <p class="text-muted">Efficient and timely delivery to your doorstep, ensuring your products arrive in perfect condition.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center animate-fadeInUp">
+        <h2 class="text-white mb-4">Ready to Experience Quality?</h2>
+        <p class="text-white mb-4">Join our growing list of satisfied customers and discover the Zahrat Al Fajr difference.</p>
+        <a routerLink="/contact" class="btn btn-light btn-lg">Get Started Today</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+<!-- About Hero Section -->
+<!-- Removed as per new design: now handled by the slider -->
+
+<!-- Company Story Section -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 animate-fadeInUp">
+        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Zahrat Al Fajr Company" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6 animate-fadeInUp" style="animation-delay: 0.2s">
+        <h2 class="mb-4">Our Story</h2>
+        <p class="lead mb-4">Zahrat Al Fajr Food Trading LLC was established with a vision to provide high-quality food products to the UAE market.</p>
+        <p>With over a decade of experience in the food trading industry, we have built a reputation for excellence, reliability, and customer satisfaction. Our commitment to quality and service has made us a trusted name in the food distribution sector.</p>
+        <p>We source our products from the finest suppliers worldwide, ensuring that our customers receive only the best quality food items. Our extensive network and strong relationships with suppliers allow us to offer competitive prices while maintaining the highest standards of quality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Company Values Section -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-title animate-fadeInUp">
+      <h2>Our Values</h2>
+      <p>The principles that guide our business</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-3" *ngFor="let value of companyValues; let i = index">
+        <div class="card h-100 shadow-hover animate-fadeInUp" [style.animation-delay]="i * 0.2 + 's'">
+          <div class="card-body text-center">
+            <i [class]="value.icon + ' display-4 mb-3 text-primary'"></i>
+            <h4 class="card-title">{{ value.title }}</h4>
+            <p class="card-text text-muted">{{ value.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title animate-fadeInUp">
+      <h2>Our Leadership Team</h2>
+      <p>Meet the people behind our success</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let member of teamMembers; let i = index">
+        <div class="card text-center shadow-hover animate-fadeInUp" [style.animation-delay]="i * 0.2 + 's'">
+          <img [src]="member.image" class="card-img-top" [alt]="member.name">
+          <div class="card-body">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <p class="card-text text-muted">{{ member.position }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

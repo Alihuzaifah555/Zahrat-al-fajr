@@ -1,0 +1,119 @@
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Router, RouterLink } from '@angular/router';
+import { SliderService } from './slider.service';
+
+interface Slide {
+  image: string;
+  title: string;
+  subtitle: string;
+  button: { text: string; link: string } | null;
+}
+
+@Component({
+  selector: 'app-slider',
+  standalone: true,
+  imports: [CommonModule, RouterLink],
+  templateUrl: './slider.component.html',
+  styleUrls: ['./slider.component.css']
+})
+export class SliderComponent implements OnInit, OnDestroy {
+  slides: Slide[] = [];
+  currentSlideIndex = 0;
+  private intervalId: any;
+  private triggerNextSub: any;
+
+  constructor(private router: Router, private sliderService: SliderService) {
+    const aboutSlides: Slide[] = [
+      {
+        image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        title: 'About Zahrat Al Fajr',
+        subtitle: 'Your trusted partner in food trading and distribution since 2010',
+        button: null
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        title: 'Our Values',
+        subtitle: 'Quality, Customer Focus, Innovation, Sustainability',
+        button: null
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        title: 'Meet Our Team',
+        subtitle: 'Driven by passion and expertise',
+        button: null
+      }
+    ];
+    const defaultSlides: Slide[] = [
+      {
+        image: 'assets/images/products/b-cover.jpg',
+        title: 'Beverages',
+        subtitle: 'Redbull, Monster, Coca-Cola, Nescafé and more',
+        button: { text: 'Explore Beverages', link: '/products/category/beverages' }
+      },
+      {
+        image: 'assets/images/products/breakfast.jpg',
+        title: 'Breakfast & Pantry',
+        subtitle: 'Quaker Oats, Coffee mate and more',
+        button: { text: 'Explore Breakfast', link: '/products/category/breakfast' }
+      },
+      {
+        image: 'assets/images/products/sweet.jpg',
+        title: 'Snacks & Sweets',
+        subtitle: 'Mars, Twix, Bounty, Kinder Joy, Nutella and more',
+        button: { text: 'Explore Snacks', link: '/products/category/snacks' }
+      }
+    ];
+    this.slides = this.router.url === '/about' ? aboutSlides : defaultSlides;
+    this.router.events.subscribe(() => {
+      this.slides = this.router.url === '/about' ? aboutSlides : defaultSlides;
+      this.currentSlideIndex = 0;
+      this.updateCurrentImage();
+    });
+  }
+
+  ngOnInit() {
+    this.startAutoSlide();
+    this.updateCurrentImage();
+    this.triggerNextSub = this.sliderService.triggerNext$.subscribe(() => {
+      this.nextSlide();
+    });
+  }
+
+  ngOnDestroy() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+    if (this.triggerNextSub) {
+      this.triggerNextSub.unsubscribe();
+    }
+  }
+
+  startAutoSlide() {
+    this.intervalId = setInterval(() => {
+      this.nextSlide();
+    }, 5000);
+  }
+
+  nextSlide() {
+    this.currentSlideIndex = (this.currentSlideIndex + 1) % this.slides.length;
+    this.updateCurrentImage();
+  }
+
+  prevSlide() {
+    this.currentSlideIndex = (this.currentSlideIndex - 1 + this.slides.length) % this.slides.length;
+    this.updateCurrentImage();
+  }
+
+  goToSlide(index: number) {
+    this.currentSlideIndex = index;
+    this.updateCurrentImage();
+  }
+
+  updateCurrentImage() {
+    const img = this.slides[this.currentSlideIndex]?.image;
+    if (img) {
+      this.sliderService.setCurrentImage(img);
+    }
+  }
+} 

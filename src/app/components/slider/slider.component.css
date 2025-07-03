@@ -1,0 +1,162 @@
+:host {
+  display: block;
+  margin-top: 76px; /* Height of the navbar */
+  margin-bottom: 48px; /* White gap below slider */
+}
+
+#mainCarousel {
+  height: calc(100vh - 76px);
+  overflow: hidden;
+}
+
+.slider-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  animation: kenburns 8s ease-in-out infinite alternate;
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.12) translate(-10px, -10px);
+  }
+}
+
+.carousel-item {
+  height: calc(100vh - 76px);
+  position: relative;
+}
+
+.carousel-caption {
+  background: rgba(var(--primary-rgb), 0.85); /* Use primary color with opacity */
+  border-radius: var(--border-radius);
+  padding: 2.5rem 3rem;
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(8px);
+  max-width: 800px;
+  margin: 0 auto;
+  bottom: 22%;
+}
+
+.carousel-caption h2 {
+  color: var(--white);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: bounceInDown 1.2s both;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.carousel-caption p {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1.2s 0.5s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-caption .btn {
+  animation: tada 1.2s 1s both;
+}
+
+@keyframes tada {
+  0% { transform: scale3d(1, 1, 1); }
+  10%, 20% { transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg); }
+  30%, 50%, 70%, 90% { transform: scale3d(1.1, 1.1, 1.1) rotate(3deg); }
+  40%, 60%, 80% { transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg); }
+  100% { transform: scale3d(1, 1, 1); }
+}
+
+.carousel-indicators {
+  bottom: 30px;
+}
+
+.carousel-indicators [type="button"] {
+  width: 32px;
+  height: 8px;
+  border-radius: 6px;
+  background-color: var(--white);
+  opacity: 0.5;
+  margin: 0 6px;
+  transition: all 0.3s;
+  border: none;
+}
+
+.carousel-indicators [type="button"].active {
+  opacity: 1;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  box-shadow: 0 2px 12px 2px rgba(0,150,136,0.18);
+  border: 2px solid var(--primary-color);
+  transform: scale(1.18);
+  z-index: 2;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+#mainCarousel:hover .carousel-control-prev,
+#mainCarousel:hover .carousel-control-next {
+  opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-size: 50%;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    padding: 1.5rem;
+    bottom: 12%;
+  }
+  
+  .carousel-caption h2 {
+    font-size: 2rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.1rem;
+  }
+  
+  .carousel-indicators {
+    bottom: 20px;
+  }
+} 
