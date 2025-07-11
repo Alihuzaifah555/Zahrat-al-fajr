@@ -21,7 +21,6 @@ interface Category {
 @Component({
   selector: 'app-category-products',
   standalone: true,
-  imports: [CommonModule, RouterLink],
   templateUrl: './category-products.component.html',
   styleUrls: ['./category-products.component.css']
 })

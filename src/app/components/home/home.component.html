@@ -7,7 +7,7 @@
         <div class="about-card">
           <h1 class="display-3 fw-bold mb-4 text-gradient">About Zahrat Al Fajr</h1>
           <p class="lead mb-4 text-light about-main-text">
-            Zahrat Al Fajr Food Trading LLC is a leading provider of premium food products in the UAE. Since 2010, we have been committed to delivering quality, reliability, and customer satisfaction. Our mission is to source the finest products from around the world and bring them to your table with excellence and care.
+            Zahrat Al Fajr Food Trading LLC is a leading provider of premium food products in the UAE. We have been committed to delivering quality, reliability, and customer satisfaction. Our mission is to source the finest products from around the world and bring them to your table with excellence and care.
           </p>
           <ul class="about-values mb-4">
             <li><strong>Quality First:</strong> We never compromise on the quality of our products.</li>
@@ -37,20 +37,20 @@
 <!-- Featured Products Section -->
 <section class="section bg-light">
   <div class="container">
-    <div class="section-title animate-fadeInUp">
-      <h2>Featured Products</h2>
-      <p>Discover our premium selection of food products</p>
+    <div class="section-title animate-fadeInUp text-center mb-5">
+      <h2 class="mb-3">Featured Products</h2>
+      <p class="text-muted">Discover our premium selection of food products</p>
     </div>
-    <div class="row g-4">
-      <div class="col-md-4" *ngFor="let product of featuredProducts; let i = index">
-        <div class="card h-100 shadow-hover animate-fadeInUp" [style.animation-delay]="i * 0.2 + 's'">
-          <div class="img-hover">
-            <img [src]="product.image" class="card-img-top" [alt]="product.title">
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let product of featuredProducts; let i = index">
+        <div class="product-card h-100 shadow-hover animate-fadeInUp" [style.animation-delay]="i * 0.2 + 's'">
+          <div class="product-image-container">
+            <img [src]="product.image" class="product-image" [alt]="product.title">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">{{ product.title }}</h5>
-            <p class="card-text text-muted">{{ product.description }}</p>
-            <a routerLink="/products" class="btn btn-primary">Learn More</a>
+          <div class="product-content">
+            <h5 class="product-title">{{ product.title }}</h5>
+            <p class="product-description">{{ product.description }}</p>
+            <a routerLink="/products" class="btn btn-primary product-btn">Learn More</a>
           </div>
         </div>
       </div>

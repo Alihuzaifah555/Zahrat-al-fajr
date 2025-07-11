@@ -50,7 +50,28 @@ export class CategoryProductsComponent implements OnInit {
       description: 'Oats, coffee mate, and more',
       icon: 'bi bi-egg-fried',
       image: 'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80'
-    }
+    },
+    {
+      id: 'pasta',
+      name: 'Pasta',
+      description: 'Delicious pasta and noodles',
+      icon: 'bi bi-egg-fried',
+      image: 'assets/images/products/b-cover.jpg'
+    },
+    {
+      id: 'tea-coffee',
+      name: 'Tea & Coffee',
+      description: 'All kinds of tea and coffee products',
+      icon: 'bi bi-cup-hot',
+      image: 'assets/images/products/nescafe-gold.webp'
+    },
+    { 
+      id: 'oliveOil',
+      name: 'Olive oil',
+      description: 'Olive oil',
+      icon: 'bi bi-egg-fried',
+      image: 'assets/images/products/olive oil.jpg'
+    },
   ];
 
   private allProducts: Product[] = [
@@ -77,25 +98,46 @@ export class CategoryProductsComponent implements OnInit {
       category: 'beverages'
     },
     {
-      id: 4,
-      name: 'Coca-Cola',
-      description: 'Classic Coca-Cola soft drink.',
-      image: 'assets/images/products/cococola.webp',
-      category: 'beverages'
-    },
-    {
       id: 5,
       name: 'Nescafé',
       description: 'Instant coffee for a quick start.',
       image: 'assets/images/products/nescafe.webp',
-      category: 'beverages'
+      category: 'tea-coffee'
     },
     {
       id: 6,
       name: 'Nescafé Gold',
       description: 'Premium instant coffee blend.',
       image: 'assets/images/products/nescafe-gold.webp',
-      category: 'beverages'
+      category: 'tea-coffee'
+    },
+    {
+      id: 21,
+      name: 'Nescafé Gold 190G',
+      description: 'Premium Nescafé Gold instant coffee, 190g jar.',
+      image: 'assets/images/products/Nescafe Gold 190G.jpg',
+      category: 'tea-coffee'
+    },
+    {
+      id: 22,
+      name: 'Nescafé Gold 47.5G',
+      description: 'Premium Nescafé Gold instant coffee, 47.5g jar.',
+      image: 'assets/images/products/Nescafe Gold 47.5G.jpg',
+      category: 'tea-coffee'
+    },
+    {
+      id: 23,
+      name: 'Nescafé Gold 95G',
+      description: 'Premium Nescafé Gold instant coffee, 95g jar.',
+      image: 'assets/images/products/Nescafe Gold 95G.jpg',
+      category: 'tea-coffee'
+    },
+    {
+      id: 24,
+      name: 'Nescafé Gold',
+      description: 'Premium Nescafé Gold instant coffee.',
+      image: 'assets/images/products/nescafe-gold.webp',
+      category: 'tea-coffee'
     },
     // Snacks & Sweets
     {
@@ -146,7 +188,91 @@ export class CategoryProductsComponent implements OnInit {
       name: 'Coffee mate',
       description: 'Creamy coffee creamer.',
       image: 'assets/images/products/coffeemate.webp',
+      category: 'tea-coffee'
+    },
+    {
+      id: 14,
+      name: 'Nesquik Refill Bag',
+      description: 'Delicious Nesquik chocolate refill bag.',
+      image: 'assets/images/products/Nesquik Refill Bag.jpeg',
       category: 'breakfast'
+    },
+    {
+      id: 15,
+      name: 'Quality Street',
+      description: 'Assorted Quality Street chocolates.',
+      image: 'assets/images/products/Quality Street.jpg',
+      category: 'snacks'
+    },
+    {
+      id: 16,
+      name: 'Schweppes Indian Tonic',
+      description: 'Schweppes Indian Tonic sleek can 330ml.',
+      image: 'assets/images/products/Schweppes Indian Tonic sleek can 330ml.jpg',
+      category: 'beverages'
+    },
+    {
+      id: 17,
+      name: 'Schweppes Bitter Lemon',
+      description: 'Schweppes Bitter Lemon sleek can 330ml.',
+      image: 'assets/images/products/Schweppes Bitter Lemon sleek can 330ml.jpg',
+      category: 'beverages'
+    },
+    {
+      id: 18,
+      name: 'CocaCola Zero',
+      description: 'CocaCola Zero 330ml can.',
+      image: 'assets/images/products/Cocacola Zero 330ml.webp',
+      category: 'beverages'
+    },
+    {
+      id: 19,
+      name: 'CocaCola',
+      description: 'CocaCola 330ml can.',
+      image: 'assets/images/products/Cocacola 330ml.webp',
+      category: 'beverages'
+    },
+    {
+      id: 20,
+      name: 'Caprisun Fairy Drink',
+      description: 'Caprisun Fairy Drink juice.',
+      image: 'assets/images/products/Caprisun Fairy Drink.jpg',
+      category: 'beverages'
+    },
+    {
+      id: 25,
+      name: 'Caprisun Fun Alarm',
+      description: 'Caprisun Fun Alarm juice.',
+      image: 'assets/images/products/Caprisun Fun Alarm.jpg',
+      category: 'beverages'
+    },
+    {
+      id: 26,
+      name: 'Carpsun Multivitamin',
+      description: 'Carpsun Multivitamin juice.',
+      image: 'assets/images/products/Carpsun Multivitamin.jpg',
+      category: 'beverages'
+    },
+    {
+      id: 100,
+      name: 'Granoro Pennoni',
+      description: 'Classic Italian spaghetti pasta.',
+      image: 'assets/images/products/pasta.jpeg',
+      category: 'pasta'
+    },
+    {
+      id: 101,
+      name: 'Granoro Ditaloni',
+      description: 'Delicious fusilli pasta, perfect for salads and sauces.',
+      image: 'assets/images/products/pasta-2.jpeg',
+      category: 'pasta'
+    },
+    {
+      id: 102,
+      name: 'Olive Oil',
+      description: 'Olive Oil ',
+      image: 'assets/images/products/olive oil.jpg',
+      category: 'oliveOil'
     },
   ];
 

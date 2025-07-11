@@ -42,13 +42,14 @@
   background: var(--white);
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border: 1px solid #e5e7eb;
 }
 
 .category-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(108, 152, 198, 0.2);
+  transform: scale(1.04) translateY(-6px);
+  box-shadow: 0 12px 32px rgba(80, 80, 80, 0.13);
+  /* No blue shadow or color */
 }
 
 .category-image-wrapper {

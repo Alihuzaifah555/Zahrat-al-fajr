@@ -26,19 +26,19 @@ export class SliderComponent implements OnInit, OnDestroy {
   constructor(private router: Router, private sliderService: SliderService) {
     const aboutSlides: Slide[] = [
       {
-        image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        image: 'assets/images/products/soft-drinks.jpg',
         title: 'About Zahrat Al Fajr',
-        subtitle: 'Your trusted partner in food trading and distribution since 2010',
+        subtitle: 'Your trusted partner in food trading and distribution',
         button: null
       },
       {
-        image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        image: 'assets/images/products/bakery.webp',
         title: 'Our Values',
         subtitle: 'Quality, Customer Focus, Innovation, Sustainability',
         button: null
       },
       {
-        image: 'https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        image: 'assets/images/products/snakss.webp',
         title: 'Meet Our Team',
         subtitle: 'Driven by passion and expertise',
         button: null
@@ -46,19 +46,19 @@ export class SliderComponent implements OnInit, OnDestroy {
     ];
     const defaultSlides: Slide[] = [
       {
-        image: 'assets/images/products/b-cover.jpg',
-        title: 'Beverages',
-        subtitle: 'Redbull, Monster, Coca-Cola, Nescafé and more',
-        button: { text: 'Explore Beverages', link: '/products/category/beverages' }
-      },
-      {
-        image: 'assets/images/products/breakfast.jpg',
+        image: 'assets/images/products/bakery.webp',
         title: 'Breakfast & Pantry',
         subtitle: 'Quaker Oats, Coffee mate and more',
         button: { text: 'Explore Breakfast', link: '/products/category/breakfast' }
       },
       {
-        image: 'assets/images/products/sweet.jpg',
+        image: 'assets/images/products/soft-drinks.jpg',
+        title: 'Beverages',
+        subtitle: 'Redbull, Monster, Coca-Cola, Nescafé and more',
+        button: { text: 'Explore Beverages', link: '/products/category/beverages' }
+      },
+      {
+        image: 'assets/images/products/snakss.webp',
         title: 'Snacks & Sweets',
         subtitle: 'Mars, Twix, Bounty, Kinder Joy, Nutella and more',
         button: { text: 'Explore Snacks', link: '/products/category/snacks' }

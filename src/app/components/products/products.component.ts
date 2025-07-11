@@ -26,22 +26,45 @@ export class ProductsComponent implements OnInit {
       name: 'Beverages',
       description: 'Energy drinks, coffee, and soft drinks',
       icon: 'bi bi-cup-straw',
-      image: 'assets/images/products/Beverages.jpg' // Coca-Cola can
+      image: 'assets/images/products/soft-drinks.jpg' // Coca-Cola can
     },
     {
       id: 'snacks',
       name: 'Snacks & Sweets',
       description: 'Chocolates, spreads, and treats',
       icon: 'bi bi-cupcake',
-      image: 'assets/images/products/sweet.jpg' // Mars bar
+      image: 'assets/images/products/snakss.webp' // Mars bar
     },
     {
       id: 'breakfast',
       name: 'Breakfast & Pantry',
       description: 'Oats, coffee mate, and more',
       icon: 'bi bi-egg-fried',
-      image: 'assets/images/products/breakfast.jpg' // Quaker Oats
-    }
+      image: 'assets/images/products/bakery.webp' // Quaker Oats
+    },
+    {
+      id: 'pasta',
+      name: 'Pasta',
+      description: 'Delicious pasta and noodles',
+      icon: 'bi bi-egg-fried',
+      image: 'assets/images/products/pasta-main.jpg'
+    },
+    { 
+      id: 'oliveOil',
+      name: 'Olive oil',
+      description: 'Olive oil',
+      icon: 'bi bi-egg-fried',
+      image: 'assets/images/products/olive oil.jpg'
+    },
+   //coffee
+   {
+    id: 'tea-coffee',
+    name: 'Tea & Coffee',
+    description: 'Tea & Coffee',
+    icon: 'bi bi-egg-fried',
+    image: 'assets/images/products/coffee.webp'
+   }
+   
   ];
 
   // Default products (fallback)

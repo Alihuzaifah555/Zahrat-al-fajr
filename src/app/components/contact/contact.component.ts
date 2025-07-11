@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class ContactComponent {
   contactInfo = {
-    address: 'Dubai, UAE',
+    address: 'OFFICE 107, 1ST FLOOR, ALFUTAIM BLDG, REGUS DEIRA CITY CENTRE, DEIRA, DUBAI, UAE',
     phone: '+971 XX XXX XXXX',
     email: 'info@zahratalfajr.com',
     workingHours: 'Monday - Friday: 9:00 AM - 6:00 PM'

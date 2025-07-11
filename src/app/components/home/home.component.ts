@@ -19,14 +19,14 @@ interface Product {
 export class HomeComponent implements OnInit, OnDestroy {
   featuredProducts: Product[] = [
     {
-      title: 'Coca-Cola',
-      description: 'Classic Coca-Cola soft drink.',
-      image: 'assets/images/products/cococola.webp',
+      title: 'Olive Oil',
+      description: 'Olive Oil ',
+      image: 'assets/images/products/olive oil.jpg',
     },
     {
-      title: 'Twix',
-      description: 'Crunchy and caramel Twix bar.',
-      image: 'assets/images/products/twix.webp',
+      title: 'Granoro Pennoni',
+      description: 'Classic Italian spaghetti pasta.',
+      image: 'assets/images/products/pasta.jpeg',
     },
     {
       title: 'Quaker Oats',

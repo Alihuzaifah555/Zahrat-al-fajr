@@ -1,13 +1,11 @@
 <!-- Modern Navigation -->
 <nav class="navbar fixed-top" [class.scrolled]="isScrolled">
   <div class="container d-flex align-items-center justify-content-between">
-    <a class="navbar-brand d-flex flex-column align-items-start gap-0" routerLink="/">
-      <div class="d-flex align-items-center gap-2">
-        <img src="../assets/images/zahrat-logo.jpeg" alt="Zahrat Al Fajr Logo" class="me-2 animate-fadeInUp">
-        <div class="d-flex flex-column align-items-start">
-          <span class="company-name">Zahrat Al Fajr</span>
-          <span class="company-subtitle">Food Trading LLC</span>
-        </div>
+    <a class="navbar-brand d-flex align-items-center gap-3" routerLink="/">
+      <img src="../assets/images/zahrat-logo.jpeg" alt="Zahrat Al Fajr Logo" class="brand-logo animate-fadeInUp">
+      <div class="brand-text d-none d-md-block" style="line-height: 0;">
+        <span class="company-name">Zahrat <span class="company-name-bold">Al Fajr</span></span><br>
+        <span class="company-subtitle">Food Trading LLC</span>
       </div>
     </a>
     <div class="header-contacts d-flex align-items-center gap-3 ms-auto">
@@ -17,13 +15,13 @@
       <a href="mailto:info@zahratalfajr.com" class="d-flex align-items-center text-decoration-none email-header" style="color:var(--primary-color); font-size:1.3rem;">
         <i class="bi bi-envelope-fill"></i>
       </a>
-      <a href="tel:+97141234567" class="d-flex align-items-center text-decoration-none call-header" style="font-weight:600; color:var(--primary-color); font-size:1.08rem;">
-        <i class="bi bi-telephone-fill me-2 fs-5"></i>+971 4 123 4567
+      <a href="tel:+971542751193" class="d-flex align-items-center text-decoration-none call-header" style="font-weight:600; color:var(--primary-color); font-size:1.08rem;">
+        <i class="bi bi-telephone-fill me-2 fs-5"></i><span class="d-none d-md-inline">+971 54 275 1193</span>
       </a>
       <a href="https://wa.me/971542751193" target="_blank" rel="noopener" class="d-flex align-items-center text-decoration-none whatsapp-header">
         <i class="bi bi-whatsapp"></i>
       </a>
-      <a routerLink="/contact" class="btn btn-primary btn-contact-now ms-2">Contact Now</a>
+      <a routerLink="/contact" class="btn btn-primary btn-contact-now ms-2 d-none d-md-inline-block">Contact Now</a>
     </div>
   </div>
 </nav>
@@ -61,7 +59,7 @@
       <!-- Company Info -->
       <div class="col-lg-4 animate-fadeInUp">
         <h5 class="text-white mb-4">Zahrat Al Fajr Food Trading LLC</h5>
-        <p class="text-light">Your trusted partner in premium food products, delivering quality and excellence since 2010.</p>
+        <p class="text-light">Your trusted partner in premium food products, delivering quality and excellence.</p>
         <div class="social-links mt-4">
           <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
           <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
@@ -77,7 +75,6 @@
           <li class="mb-2"><a routerLink="/about" class="text-light text-decoration-none">About Us</a></li>
           <li class="mb-2"><a routerLink="/products" class="text-light text-decoration-none">Our Products</a></li>
           <li class="mb-2"><a routerLink="/contact" class="text-light text-decoration-none">Contact Us</a></li>
-          <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
         </ul>
       </div>
 
@@ -87,11 +84,11 @@
         <ul class="list-unstyled text-light">
           <li class="mb-3">
             <i class="bi bi-geo-alt me-2"></i>
-            123 Business Street, Dubai, UAE
+            OFFICE 107, 1ST FLOOR, ALFUTAIM BLDG, REGUS DEIRA CITY CENTRE, DEIRA, DUBAI, UAE
           </li>
           <li class="mb-3">
             <i class="bi bi-telephone me-2"></i>
-            +971 4 123 4567
+            +971 54 275 1193
           </li>
           <li class="mb-3">
             <i class="bi bi-envelope me-2"></i>
