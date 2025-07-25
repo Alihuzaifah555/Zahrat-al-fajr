@@ -21,10 +21,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       title: 'Olive Oil',
       description: 'Olive Oil ',
-      image: 'assets/images/products/olive oil.jpg',
+      image: 'assets/images/products/asdf.avif',
     },
     {
-      title: 'Granoro Pennoni',
+      title: 'Pasta',
       description: 'Classic Italian spaghetti pasta.',
       image: 'assets/images/products/pasta.jpeg',
     },

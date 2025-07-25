@@ -28,9 +28,9 @@ export class AppComponent implements OnInit {
   
   navItems: NavItem[] = [
     { label: 'Home', path: '/' },
-    { label: 'About', path: '/about' },
+    { label: 'About Us', path: '/about' },
     { label: 'Products', path: '/products' },
-    { label: 'Contact', path: '/contact' }
+    { label: 'Contact Us', path: '/contact' }
   ];
 
   constructor(private router: Router) {}

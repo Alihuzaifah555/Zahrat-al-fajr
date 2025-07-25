@@ -5,8 +5,8 @@
     <div class="row align-items-center min-vh-100">
       <div class="col-lg-6 animate-fadeInUp">
         <div class="about-card">
-          <h1 class="display-3 fw-bold mb-4 text-gradient">About Zahrat Al Fajr</h1>
-          <p class="lead mb-4 text-light about-main-text">
+          <h1 class="display-5 fw-bold mb-4">About Zahrat Al Fajr</h1>
+          <p class="lead mb-4 about-main-text">
             Zahrat Al Fajr Food Trading LLC is a leading provider of premium food products in the UAE. We have been committed to delivering quality, reliability, and customer satisfaction. Our mission is to source the finest products from around the world and bring them to your table with excellence and care.
           </p>
           <ul class="about-values mb-4">
@@ -48,9 +48,9 @@
             <img [src]="product.image" class="product-image" [alt]="product.title">
           </div>
           <div class="product-content">
-            <h5 class="product-title">{{ product.title }}</h5>
-            <p class="product-description">{{ product.description }}</p>
-            <a routerLink="/products" class="btn btn-primary product-btn">Learn More</a>
+            <h5 class="product-title text-center">{{ product.title }}</h5>
+            <p class="product-description text-center">{{ product.description }}</p>
+            <a routerLink="/products" class="btn btn-primary product-btn text-center">Learn More</a>
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@
       <div class="col-lg-8 text-center animate-fadeInUp">
         <h2 class="text-white mb-4">Ready to Experience Quality?</h2>
         <p class="text-white mb-4">Join our growing list of satisfied customers and discover the Zahrat Al Fajr difference.</p>
-        <a routerLink="/contact" class="btn btn-light btn-lg">Get Started Today</a>
+        <a routerLink="/contact" class="btn btn-light btn-lg" style="color: var(--primary-dark);">Get Started Today</a>
       </div>
     </div>
   </div>

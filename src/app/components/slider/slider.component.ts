@@ -26,39 +26,39 @@ export class SliderComponent implements OnInit, OnDestroy {
   constructor(private router: Router, private sliderService: SliderService) {
     const aboutSlides: Slide[] = [
       {
-        image: 'assets/images/products/soft-drinks.jpg',
-        title: 'About Zahrat Al Fajr',
-        subtitle: 'Your trusted partner in food trading and distribution',
-        button: null
-      },
-      {
-        image: 'assets/images/products/bakery.webp',
-        title: 'Our Values',
-        subtitle: 'Quality, Customer Focus, Innovation, Sustainability',
-        button: null
-      },
-      {
-        image: 'assets/images/products/snakss.webp',
-        title: 'Meet Our Team',
-        subtitle: 'Driven by passion and expertise',
-        button: null
-      }
-    ];
-    const defaultSlides: Slide[] = [
-      {
-        image: 'assets/images/products/bakery.webp',
+        image: 'assets/images/products/drink_banner.jpg',
         title: 'Breakfast & Pantry',
         subtitle: 'Quaker Oats, Coffee mate and more',
         button: { text: 'Explore Breakfast', link: '/products/category/breakfast' }
       },
       {
-        image: 'assets/images/products/soft-drinks.jpg',
+        image: 'assets/images/products/coffee.jpg',
         title: 'Beverages',
         subtitle: 'Redbull, Monster, Coca-Cola, Nescafé and more',
         button: { text: 'Explore Beverages', link: '/products/category/beverages' }
       },
       {
-        image: 'assets/images/products/snakss.webp',
+        image: 'assets/images/products/choco_banner.jpg',
+        title: 'Snacks & Sweets',
+        subtitle: 'Mars, Twix, Bounty, Kinder Joy, Nutella and more',
+        button: { text: 'Explore Snacks', link: '/products/category/snacks' }
+      }
+    ];
+    const defaultSlides: Slide[] = [
+      {
+        image: 'assets/images/products/drink_banner.jpg',
+        title: 'Breakfast & Pantry',
+        subtitle: 'Quaker Oats, Coffee mate and more',
+        button: { text: 'Explore Breakfast', link: '/products/category/breakfast' }
+      },
+      {
+        image: 'assets/images/products/coffee.jpg',
+        title: 'Beverages',
+        subtitle: 'Redbull, Monster, Coca-Cola, Nescafé and more',
+        button: { text: 'Explore Beverages', link: '/products/category/beverages' }
+      },
+      {
+        image: 'assets/images/products/choco_banner.jpg',
         title: 'Snacks & Sweets',
         subtitle: 'Mars, Twix, Bounty, Kinder Joy, Nutella and more',
         button: { text: 'Explore Snacks', link: '/products/category/snacks' }

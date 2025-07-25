@@ -12,23 +12,10 @@
          class="carousel-item"
          [class.active]="i === currentSlideIndex">
       <div class="slider-overlay"></div>
-      <div class="slider-shapes">
-        <svg width="60" height="60" class="shape shape-1"><circle cx="30" cy="30" r="28" fill="#fff" fill-opacity="0.08"/></svg>
-        <svg width="40" height="40" class="shape shape-2" viewBox="0 0 40 40"><path d="M0,20 Q10,0 20,20 T40,20 Q30,40 20,20 T0,20 Z" fill="#fff" fill-opacity="0.10"/></svg>
-        <svg width="30" height="30" class="shape shape-3"><polygon points="15,0 30,30 0,30" fill="#fff" fill-opacity="0.07"/></svg>
-      </div>
       <img [src]="slide.image"
            class="d-block w-100 slider-img"
            [alt]="slide.title">
-      <div class="carousel-caption">
-        <h2 class="display-4 fw-bold mb-3 animate__animated animate__bounceInDown">{{ slide.title }}</h2>
-        <p class="lead mb-4 animate__animated animate__fadeInUp">{{ slide.subtitle }}</p>
-        <a *ngIf="slide.button"
-           [routerLink]="slide.button.link"
-           class="btn btn-primary btn-lg animate__animated animate__tada glow-btn">
-          {{ slide.button.text }}
-        </a>
-      </div>
+   
     </div>
   </div>
   <button class="carousel-control-prev" type="button" (click)="prevSlide()">

@@ -30,7 +30,7 @@ export class ProductsComponent implements OnInit {
     },
     {
       id: 'snacks',
-      name: 'Snacks & Sweets',
+      name: 'Confectionery',
       description: 'Chocolates, spreads, and treats',
       icon: 'bi bi-cupcake',
       image: 'assets/images/products/snakss.webp' // Mars bar

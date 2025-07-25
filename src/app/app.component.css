@@ -29,7 +29,7 @@
 .company-subtitle {
   font-family: 'Roboto', sans-serif;
   font-size: 0.85rem;
-  color: var(--text-light);
+  color: var(--primary-dark);
   letter-spacing: 0.5px;
   margin-top: 0;
   line-height: 1;
@@ -222,7 +222,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(108, 152, 198, 0.10); /* 10% transparent blue */
+  background: rgba(16, 16, 17, 0.1); /* 10% transparent blue */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   display: flex;
@@ -257,8 +257,8 @@
 }
 
 .overlay-nav-list .nav-link {
-  color: #111 !important;
-  font-size: 2rem;
+  color: var(--primary-dark) !important;
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
