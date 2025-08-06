@@ -26,19 +26,25 @@ export class SliderComponent implements OnInit, OnDestroy {
   constructor(private router: Router, private sliderService: SliderService) {
     const aboutSlides: Slide[] = [
       {
-        image: 'assets/images/products/drink_banner.jpg',
+        image: 'assets/images/products/b1.jpeg',
         title: 'Breakfast & Pantry',
         subtitle: 'Quaker Oats, Coffee mate and more',
         button: { text: 'Explore Breakfast', link: '/products/category/breakfast' }
       },
       {
-        image: 'assets/images/products/coffee.jpg',
+        image: 'assets/images/products/b3.jpeg',
         title: 'Beverages',
         subtitle: 'Redbull, Monster, Coca-Cola, Nescafé and more',
         button: { text: 'Explore Beverages', link: '/products/category/beverages' }
       },
       {
-        image: 'assets/images/products/choco_banner.jpg',
+        image: 'assets/images/products/b7.jpeg',
+        title: 'Beverages',
+        subtitle: 'Redbull, Monster, Coca-Cola, Nescafé and more',
+        button: { text: 'Explore Beverages', link: '/products/category/beverages' }
+      },
+      {
+        image: 'assets/images/products/b5.jpeg',
         title: 'Snacks & Sweets',
         subtitle: 'Mars, Twix, Bounty, Kinder Joy, Nutella and more',
         button: { text: 'Explore Snacks', link: '/products/category/snacks' }
@@ -46,23 +52,29 @@ export class SliderComponent implements OnInit, OnDestroy {
     ];
     const defaultSlides: Slide[] = [
       {
-        image: 'assets/images/products/drink_banner.jpg',
+        image: 'assets/images/products/b1.jpeg',
         title: 'Breakfast & Pantry',
         subtitle: 'Quaker Oats, Coffee mate and more',
         button: { text: 'Explore Breakfast', link: '/products/category/breakfast' }
       },
       {
-        image: 'assets/images/products/coffee.jpg',
+        image: 'assets/images/products/b7.jpeg',
         title: 'Beverages',
         subtitle: 'Redbull, Monster, Coca-Cola, Nescafé and more',
         button: { text: 'Explore Beverages', link: '/products/category/beverages' }
       },
       {
-        image: 'assets/images/products/choco_banner.jpg',
+        image: 'assets/images/products/b3.jpeg',
         title: 'Snacks & Sweets',
         subtitle: 'Mars, Twix, Bounty, Kinder Joy, Nutella and more',
         button: { text: 'Explore Snacks', link: '/products/category/snacks' }
-      }
+      },
+      {
+        image: 'assets/images/products/b5.jpeg',
+        title: 'Snacks & Sweets',
+        subtitle: 'Mars, Twix, Bounty, Kinder Joy, Nutella and more',
+        button: { text: 'Explore Snacks', link: '/products/category/snacks' }
+      },
     ];
     this.slides = this.router.url === '/about' ? aboutSlides : defaultSlides;
     this.router.events.subscribe(() => {

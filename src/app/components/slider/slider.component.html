@@ -7,17 +7,19 @@
             (click)="goToSlide(i)">
     </button>
   </div>
+
   <div class="carousel-inner">
     <div *ngFor="let slide of slides; let i = index"
          class="carousel-item"
-         [class.active]="i === currentSlideIndex">
+         [class.active]="i === currentSlideIndex"
+         [class.animated-slide]="i === currentSlideIndex">
       <div class="slider-overlay"></div>
       <img [src]="slide.image"
            class="d-block w-100 slider-img"
            [alt]="slide.title">
-   
     </div>
   </div>
+
   <button class="carousel-control-prev" type="button" (click)="prevSlide()">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -26,4 +28,4 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div> 
+</div>

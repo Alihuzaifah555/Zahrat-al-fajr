@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   featuredProducts: Product[] = [
     {
       title: 'Olive Oil',
-      description: 'Olive Oil ',
+      description: 'Pure, cold-pressed olive oil for healthy, flavorful cooking.',
       image: 'assets/images/products/asdf.avif',
     },
     {
@@ -32,6 +32,21 @@ export class HomeComponent implements OnInit, OnDestroy {
       title: 'Quaker Oats',
       description: 'Healthy and nutritious oats.',
       image: 'assets/images/products/ots.jpg',
+    },
+    {
+      title: 'Coca Cola',
+      description: 'Refreshing classic cola with a crisp, bubbly taste.',
+      image: 'assets/images/products/Cocacola 330ml.webp',
+    },
+    {
+      title: 'Red Bull',
+      description: 'Energy drink that boosts focus and revitalizes your body.',
+      image: 'assets/images/products/redbull.jpg',
+    },
+    {
+      title: 'Nutella',
+      description: 'Creamy hazelnut spread with rich cocoa flavor.',
+      image: 'assets/images/products/neutella.webp',
     },
   ];
 

@@ -269,11 +269,118 @@ export class CategoryProductsComponent implements OnInit {
     },
     {
       id: 102,
-      name: 'Olive Oil',
-      description: 'Olive Oil ',
-      image: 'assets/images/products/olive oil.jpg',
+      name: 'Basso Olive Oil',
+      description: 'Basso Olive Oil',
+      image: 'assets/images/products/oil1.avif',
       category: 'oliveOil'
     },
+    {
+      id: 116,
+      name: 'Fedele',
+      description: 'Fedele',
+      image: 'assets/images/products/oil2.avif',
+      category: 'oliveOil'
+    },
+    {
+      id: 117,
+      name: 'Cassico',
+      description: 'Cassico',
+      image: 'assets/images/products/oil3.avif',
+      category: 'oliveOil'
+    },
+    {
+      id: 107,
+      name: 'Nutella 350 g',
+      description: 'Nutella 350g',
+      image: 'assets/images/products/a1.jpeg',
+      category: 'snacks'
+    },
+    {
+      id: 103,
+      name: 'Nutella 200 g',
+      description: 'Nutella 200g',
+      image: 'assets/images/products/a2.jpeg',
+      category: 'snacks'
+    },
+    {
+      id: 104,
+      name: 'Maltesers',
+      description: 'Maltesers 400g',
+      image: 'assets/images/products/a3.jpeg',
+      category: 'snacks'
+    },
+    {
+      id: 105,
+      name: 'Tora Bika Capuccino',
+      description: 'Tora Bika Capuccino',
+      image: 'assets/images/products/a4.jpeg',
+      category: 'tea-coffee'
+    },
+    {
+      id: 106,
+      name: 'Good Day Capuccino',
+      description: 'Good Day Capuccino',
+      image: 'assets/images/products/a5.jpeg',
+      category: 'tea-coffee'
+    },
+    {
+      id: 107,
+      name: 'Pringles (Sour Cream & Onion)',
+      description: 'Pringles (Sour Cream & Onion)',
+      image: 'assets/images/products/p1.jpeg',
+      category: 'snacks'
+    },
+    {
+      id: 108,
+      name: 'Pringles (Salt & Viniger)',
+      description: 'Pringles (Salt & Viniger)',
+      image: 'assets/images/products/p2.jpeg',
+      category: 'snacks'
+    },
+    {
+      id: 109,
+      name: 'Pringles (Paparika)',
+      description: 'Pringles (Paparika)',
+      image: 'assets/images/products/p3.jpeg',
+      category: 'snacks'
+    },
+    {
+      id: 110,
+      name: 'Pringles (Original)',
+      description: 'Pringles (Original)',
+      image: 'assets/images/products/p4.jpeg',
+      category: 'snacks'
+    },
+    {
+      id: 111,
+      name: 'Pringles (Ketchup)',
+      description: 'Pringles (Ketchup)',
+      image: 'assets/images/products/p5.jpeg',
+      category: 'snacks'
+    },
+
+    {
+      id: 112,
+      name: 'Pringles (Hot & Spicy)',
+      description: 'Pringles (Hot & Spicy)',
+      image: 'assets/images/products/p6.jpeg',
+      category: 'snacks'
+    },
+    {
+      id: 113,
+      name: 'Pringles (Cheesy Cheese)',
+      description: 'Pringles (Cheesy Cheese)',
+      image: 'assets/images/products/p7.jpeg',
+      category: 'snacks'
+    },
+    {
+      id: 115,
+      name: 'Pringles (Texes BBQ Sauce)',
+      description: 'Pringles (Texes BBQ Sauce)',
+      image: 'assets/images/products/p9.jpeg',
+      category: 'snacks'
+    },
+
   ];
 
   constructor(private route: ActivatedRoute) {}
