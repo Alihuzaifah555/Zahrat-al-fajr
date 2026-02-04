@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Zahrat-Al-Fajr": {
+    "Laraib-Food-Stuff": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/zahrat-al-fajr",
+            "outputPath": "dist/laraib-food-stuff",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Zahrat-Al-Fajr:build:production"
+              "buildTarget": "Laraib-Food-Stuff:build:production"
             },
             "development": {
-              "buildTarget": "Zahrat-Al-Fajr:build:development"
+              "buildTarget": "Laraib-Food-Stuff:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Zahrat-Al-Fajr:build"
+            "buildTarget": "Laraib-Food-Stuff:build"
           }
         },
         "test": {

@@ -11,9 +11,9 @@ import { FormsModule } from '@angular/forms';
 })
 export class ContactComponent {
   contactInfo = {
-    address: 'OFFICE 107, 1ST FLOOR, ALFUTAIM BLDG, REGUS DEIRA CITY CENTRE, DEIRA, DUBAI, UAE',
-    phone: '+971 XX XXX XXXX',
-    email: 'info@zahratalfajr.com',
+    address: 'FZ MEYDAN GRANDSTAND 6TH FLOOR, MEYDAN ROAD NAD AL SHEBA, DUBAI U.A.E',
+    phone: '+971 56 357 9348',
+    email: 'info@laraibfoodstuff.com',
     workingHours: 'Monday - Friday: 9:00 AM - 6:00 PM'
   };
 

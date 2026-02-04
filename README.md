@@ -1,6 +1,6 @@
-# ZahratAlFajr
+# LaraibFoodStuff
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+This project is for the Laraib Food Stuff Trading LLC website, built with [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
 
 ## Development server
 
