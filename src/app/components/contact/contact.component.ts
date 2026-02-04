@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class ContactComponent {
   contactInfo = {
-    address: 'FZ MEYDAN GRANDSTAND 6TH FLOOR, MEYDAN ROAD NAD AL SHEBA, DUBAI U.A.E',
+    address: 'MEYDAN GRANDSTAND 6TH FLOOR, MEYDAN ROAD NAD AL SHEBA, DUBAI U.A.E',
     phone: '+971 56 357 9348',
     email: 'info@laraibfoodstuff.com',
     workingHours: 'Monday - Friday: 9:00 AM - 6:00 PM'
