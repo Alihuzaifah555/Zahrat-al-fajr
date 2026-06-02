@@ -85,27 +85,11 @@
   transition: all 0.3s ease;
 }
 
-.btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
 .btn-primary:hover {
-  background-color: var(--primary-dark);
-  border-color: var(--primary-dark);
   transform: translateY(-1px);
 }
 
-.btn-outline-primary {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.btn-outline-primary:hover {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  color: white;
-}
+/* btn-primary / btn-outline-primary gradients — global styles.css */
 
 .btn-outline-danger {
   color: #dc3545;

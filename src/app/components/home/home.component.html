@@ -1,7 +1,12 @@
 <!-- About Section (formerly Welcome) -->
 <section class="hero-section position-relative overflow-hidden">
-  <div class="hero-bg"></div>
-  <div class="container position-relative">
+  <!-- Invoice-style brand shapes (lime curve + orange accent) -->
+  <div class="hero-invoice-decor" aria-hidden="true">
+    <div class="hero-decor-topbar"></div>
+    <div class="hero-decor-lime"></div>
+    <div class="hero-decor-orange"></div>
+  </div>
+  <div class="container position-relative hero-content">
     <div class="row align-items-center min-vh-100">
       <div class="col-lg-6 animate-fadeInUp">
         <div class="about-card">
@@ -35,9 +40,16 @@
 </section>
 
 <!-- Featured Products Section -->
-<section class="section bg-light">
-  <div class="container">
+<section class="section featured-products-section position-relative overflow-hidden">
+  <div class="featured-effects" aria-hidden="true">
+    <div class="featured-top-stripe"></div>
+    <div class="featured-blob featured-blob--lime"></div>
+    <div class="featured-blob featured-blob--orange"></div>
+    <div class="featured-corner-accent"></div>
+  </div>
+  <div class="container position-relative featured-content">
     <div class="section-title animate-fadeInUp text-center mb-5">
+      <div class="featured-title-accent"></div>
       <h2 class="mb-3">Featured Products</h2>
       <p class="text-muted">Discover our premium selection of food products</p>
     </div>
@@ -104,7 +116,7 @@
       <div class="col-lg-8 text-center animate-fadeInUp">
         <h2 class="text-white mb-4">Ready to Experience Quality?</h2>
         <p class="text-white mb-4">Join our growing list of satisfied customers and discover the Laraib Food Stuff difference.</p>
-        <a routerLink="/contact" class="btn btn-light btn-lg" style="color: var(--primary-dark);">Get Started Today</a>
+        <a routerLink="/contact" class="btn btn-light btn-lg">Get Started Today</a>
       </div>
     </div>
   </div>

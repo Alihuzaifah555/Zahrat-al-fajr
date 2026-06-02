@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 .products-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/products/choco_banner.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/products/choco_banner.png');
   background-size: cover;
   /* background-repeat: no-repeat; */
   /* background-position: center;  */
@@ -194,7 +194,7 @@
 }
 
 .product-title {
-  color: var(--primary-dark);
+  color: var(--gold-palm-dark);
   font-weight: 600;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
@@ -213,7 +213,7 @@
 }
 
 .product-details strong {
-  color: var(--primary-dark);
+  color: var(--gold-palm-dark);
 }
 
 /* Quality Assurance Section */
@@ -276,12 +276,4 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.btn-outline-primary {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.btn-outline-primary:hover {
-  background-color: var(--primary-color);
-  color: white;
-}
+/* Button gradients — global styles.css */

@@ -1,17 +1,27 @@
 :host {
   display: block;
-  margin-top: 76px; /* Height of the navbar */
-  margin-bottom: 48px; /* White gap below slider */
+  --slider-nav-offset: 76px;
+  margin-top: var(--slider-nav-offset);
+  margin-bottom: 48px;
 }
 
 #mainCarousel {
-  height: calc(100vh - 76px);
+  height: calc(100vh - var(--slider-nav-offset));
   overflow: hidden;
+  background: var(--slider-surface-gradient);
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+  background: var(--slider-surface-gradient);
 }
 
 .slider-img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 .carousel-item.animated-slide {
   animation: fadeZoomIn 1.2s ease-in-out;
@@ -43,7 +53,6 @@
 }
 
 .carousel-item {
-  height: calc(100vh - 76px);
   position: relative;
 }
 
@@ -131,7 +140,7 @@
 .carousel-indicators [type="button"].active {
   opacity: 1;
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-  box-shadow: 0 2px 12px 2px rgba(0,150,136,0.18);
+  box-shadow: 0 2px 12px 2px rgba(var(--primary-rgb), 0.25);
   border: 2px solid var(--primary-color);
   transform: scale(1.18);
   z-index: 2;
@@ -159,6 +168,32 @@
 }
 
 @media (max-width: 768px) {
+  :host {
+    --slider-nav-offset: 88px;
+    margin-bottom: 28px;
+  }
+
+  #mainCarousel {
+    height: min(48vh, 380px);
+    min-height: 260px;
+    max-height: 380px;
+  }
+
+  .slider-img {
+    object-fit: contain;
+    object-position: center center;
+  }
+
+  .carousel-indicators {
+    bottom: 12px;
+  }
+
+  .carousel-indicators [type="button"] {
+    width: 28px;
+    height: 6px;
+    margin: 0 4px;
+  }
+
   .carousel-caption {
     padding: 2rem 1.5rem;
     bottom: 15%;
@@ -181,19 +216,29 @@
     margin-bottom: 2rem;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   }
-  
-  .carousel-indicators {
-    bottom: 25px;
-  }
-  
-  .carousel-indicators [type="button"] {
-    width: 40px;
-    height: 10px;
-    margin: 0 8px;
-  }
 }
 
 @media (max-width: 576px) {
+  :host {
+    --slider-nav-offset: 92px;
+  }
+
+  #mainCarousel {
+    height: min(44vh, 340px);
+    min-height: 240px;
+    max-height: 340px;
+  }
+
+  .carousel-indicators {
+    bottom: 10px;
+  }
+
+  .carousel-indicators [type="button"] {
+    width: 24px;
+    height: 5px;
+    margin: 0 3px;
+  }
+
   .carousel-caption {
     padding: 2.5rem 1.5rem;
     bottom: 20%;
@@ -208,9 +253,5 @@
   .carousel-caption p {
     font-size: 1.2rem;
     margin-bottom: 1.8rem;
-  }
-  
-  .carousel-indicators {
-    bottom: 30px;
   }
 } 
