@@ -99,6 +99,17 @@
   width: 100%;
 }
 
+.footer-brand {
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
 /* Footer Links */
 .footer a {
   transition: var(--transition);
